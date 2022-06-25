@@ -25,7 +25,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       return res.status(200).json({ payUrl: paymentResponse });
     default:
-      res.status(404).json({ error: 'ROUTE NOT FOUND' });
-      break;
+      return res.status(404).json({ error: 'ROUTE NOT FOUND' });
   }
 }

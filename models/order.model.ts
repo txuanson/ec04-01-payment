@@ -8,6 +8,9 @@ export const OrderStatus = {
   ERRORED: 'ERRORED',
 }
 
+// Edit this!
+export type PaymentMethod = 'zalopay' | 'vnpay' | 'momo';
+
 export interface IItem {
   name: string, photo: string, price: number, quantity: number
 }
@@ -29,7 +32,7 @@ const OrderSchema = new mongoose.Schema({
 }, { timestamps: true, versionKey: false });
 
 export interface IOrder extends Document {
-  paymentMethod: string;
+  paymentMethod: PaymentMethod;
   userName: string;
   status: string;
   items: IItem[],

@@ -8,7 +8,7 @@ export default function errorHandler(error: AxiosError) {
       return message.error(JSON.stringify(error.response.data))
 
     default:
-      return message.error('Có lỗi xảy ra!' );
+      return message.error('Có lỗi xảy ra!');
   }
 
 }

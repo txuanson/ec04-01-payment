@@ -7,7 +7,7 @@ import axios from 'axios';
 import styles from '../styles/Home.module.css'
 import errorHandler from '../utils/errorHandler'
 
-const productName = 'Apple AirPods';
+const productName = 'Apple IPhone';
 const productPhoto = '/iphone.png';
 const price = 29550000;
 const shipping = 10000;
